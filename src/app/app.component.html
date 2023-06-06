@@ -313,28 +313,14 @@
 
 <div class="content" role="main">
   <!-- content -->
-  <sds-input
-    [formControl]="inputControl"
-    [label] = 'inputConfig.label'
-    [name] = 'inputConfig.name'
-    [errors] = 'inputConfig.errors'>
-  </sds-input>
-  <sds-tag-input
+  <sds-split-button
+    name="split-button"
     [formControl]="myControl"
-    [internalId] = 'config.internalId'
-    [qaTag] = 'config.qaTag'
-    [label] = 'config.label'
-    [infoMessage] = 'config.infoMessage'
-    [placeholder] = 'config.placeholder'
-    [tooltip] = 'config.tooltip'
-    [tagSize] = 'config.tagSize'
-    [type] = 'config.type'
-    [orientation] = 'config.orientation'
-    [withAutocomplete] = 'config.withAutocomplete'
-    [autocompleteList] = 'config.autocompleteList'
-    [multipleSelection] = 'config.multipleSelection'
-    [allowFreeText] = 'config.allowFreeText'
-    [charsToShowAutocompleteList] = 'config.charsToShowAutocompleteList'
-    [errors] = 'config.errors'>
-  </sds-tag-input>
+    [iconButtonRight] = 'config.iconButtonRight'
+    [iconDropdownButton] = 'config.iconDropdownButton'>
+    <i class="icon icon-lock"></i>
+    <span>
+      label
+    </span>
+  </sds-split-button>
 </div>
