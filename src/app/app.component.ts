@@ -9,6 +9,7 @@ import { FormControl } from '@angular/forms';
 
 export class AppComponent {
   public myControl: FormControl = new FormControl()
+  public test: any;
 
   public config: any = {
     iconButtonRight: "icon-arrow4_down",

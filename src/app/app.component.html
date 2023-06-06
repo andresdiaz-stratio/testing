@@ -312,15 +312,17 @@
 </div>
 
 <div class="content" role="main">
-  <!-- content -->
-  <sds-split-button
-    name="split-button"
-    [formControl]="myControl"
-    [iconButtonRight] = 'config.iconButtonRight'
-    [iconDropdownButton] = 'config.iconDropdownButton'>
-    <i class="icon icon-lock"></i>
-    <span>
-      label
-    </span>
-  </sds-split-button>
+  <form>
+    <!-- content -->
+    <sds-split-button
+      [iconButtonRight] = 'config.iconButtonRight'
+      [iconDropdownButton] = 'config.iconDropdownButton'>
+      <div button-content>
+        <i class="icon icon-lock"></i>
+        <span>
+          label
+        </span>
+      </div>
+    </sds-split-button>
+  </form>
 </div>
